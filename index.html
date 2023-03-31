@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Poonam Nair</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700|Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css">
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Teko&display=swap" rel="stylesheet">
+
+    
+
+<style>
+html {
+  min-height: 100%;
+  background: linear-gradient(135deg, #171717, #2b2b2b, #171717);
+}
+
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background: transparent;
+  overflow-x: hidden;
+}
+
+a:hover {
+  background: transparent;
+  background-image: linear-gradient(to right, #f8e102, #ff8300, #f8e102);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+header {
+  position: relative;
+  padding: 100px 0 70px;
+  background-image: url('https://cdn.midjourney.com/16ebcbf3-87e3-466d-a482-4d2719df9b3d/grid_0.png');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  text-align: center;
+  overflow: hidden;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+    
+header::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+ 
+nav {
+  font-family: 'Space Mono', monospace;
+  font-size: 18px;
+  color: white;
+}
+
+.navbar-brand {
+  font-size: 28px;
+  font-weight: bold;
+  color: white;
+}
+
+.navbar-nav .nav-link {
+  color: white !important;
+}
+
+nav a {
+  color: white !important;
+}
+
+
+.profile-pic {
+  width: 120px;
+  height: 120px;
+  background-image: url('https://i.ibb.co/b1ttPJR/tets-pic.png');
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 20px;
+  border: 3px solid white;
+  box-sizing: border-box;
+  padding: 2px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+h1, h2 {
+  font-family: 'Orbitron', sans-serif;
+}
+
+
+
+h3 {
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+}
+    
+p, .btn {
+  font-family: 'Space Mono', monospace;
+}
+
+.btn {
+  margin-top: 20px;
+  border: 2px solid white;
+  background-color: transparent;
+  transition: all 0.3s;
+  font-family: 'Space Mono', monospace;
+  transition: all 0.3s;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: #5C258D;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  border: 2px solid white;
+}
+
+section {
+  padding: 50px 0;
+}
+
+  #pdf {
+    text-align: center;
+  }
+
+
+#pdf .book-images img {
+  width: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s;
+}
+
+#pdf .book-images img:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+  footer {
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+  .video-container {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    margin-bottom: 20px;
+    margin-right: -10px;
+    margin-left: -10px;
+  }
+
+  .video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .video-preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    background-image: none;
+  }
+
+  .row:first-child .video-container {
+    margin-top: 30px;
+  }
+
+  .row:last-child .video-container {
+    margin-bottom: 30px;
+  }
+
+  iframe:focus {
+    outline: none;
+  }
+    
+.image-slider {
+  position: relative;
+  overflow: hidden;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+}
+
+.image-slider .ai-generated-photo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  max-width: calc(100% - 4px); /* Subtracts the width of the handle */
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 4px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: ew-resize;
+  z-index: 2;
+}
+
+
+
+
+
+</style>
+
+</head>
+<body>
+<header>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#videos">Videos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#ai-generated-photos">Photos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pdf">Book</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <div class="container">
+    <div class="profile-pic"></div>
+    <h1>Poonam Nair</h1>
+    <h3>AI Artist &amp; Technologist</h3>
+    <p>I'm a full-time AI professional, and I've been lucky enough to spend my career exploring the fascinating world where technology meets AI. This portfolio page is just a showcase of some of the unique and innovative stuff I've been able to create. Hope you enjoy it!</p>
+    <a href="mailto:poonamnair@gmail.com" class="btn btn-primary">Let's Connect</a>
+  </div>
+</header>
+
+
+
+<section id="videos">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">AI Generated Videos / Tutorials </h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="video-container">
+          <div class="video-preview" data-src="https://www.youtube.com/embed/E53tk9qGO3o" data-gif="https://s10.gifyu.com/images/Neon_Solitude_An_AIGenerated_Dystopian_Animation-1.gif"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="video-container">
+          <div class="video-preview" data-src="https://www.youtube.com/embed/unzwtHHFEeE" data-gif="https://s2.gifyu.com/images/Plaza__All_Mine_Chillstep_Remix__A_Visual_Journey_Through_.gif"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="video-container">
+          <div class="video-preview" data-src="https://www.youtube.com/embed/-Y31-Hd8Azc" data-gif="https://s2.gifyu.com/images/Plaza__Over_Melodic_Remix__AI_Lyric_Video-1.gif"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="video-container">
+          <div class="video-preview" data-src="https://www.youtube.com/embed/UzydBoD9fXE" data-gif="https://s2.gifyu.com/images/How_to_Create_Fully_AIPowered_Songs__From_Singing_Beats_Ly.gif"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+    
+<section id="ai-generated-photos">
+  <div class="container">
+    <h2 data-aos="fade-up" data-aos-delay="100">AI-Generated Photos</h2>
+    <div class="row">
+      <div class="col-md-6 col-lg-6">
+        <div class="image-slider" data-aos="zoom-in" data-aos-delay="200" style="background-image: url('https://cdn.midjourney.com/5bebdf4e-295a-4896-b496-1e6746f6577e/grid_0.png');">
+          <div class="ai-generated-photo" style="background-image: url('https://cdn.midjourney.com/d6f1d7a6-e519-42c4-86d6-30505a7a08d0/grid_0.png');"></div>
+          <div class="handle"></div>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-6">
+        <div class="image-slider" data-aos="zoom-in" data-aos-delay="300" style="background-image: url('https://cdn.midjourney.com/1264b3c5-e20e-4aac-9d5f-272c22ae82f2/grid_0.png');">
+          <div class="ai-generated-photo" style="background-image: url('https://cdn.midjourney.com/3be400c0-6266-4660-840c-df88fc8e82df/grid_0.png');"></div>
+          <div class="handle"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+  <section id="pdf">
+    <div class="container">
+ <h2 data-aos="fade-up" data-aos-delay="100">Quests Through Time</h2>
+    <p data-aos="fade-up" data-aos-delay="200">An AI generated childrens book.</p>
+      <div class="row book-images">
+        <div class="col-md-4">
+          <img src="https://i.ibb.co/jT3NQzN/5.png" alt="Book image 1">
+        </div>
+        <div class="col-md-4">
+          <img src="https://i.ibb.co/qDqRk16/2.png" alt="Book image 2">
+        </div>
+        <div class="col-md-4">
+          <img src="https://i.ibb.co/3BJrVzn/4.png" alt="Book image 3">
+        </div>
+      </div>
+      <a href="https://www.amazon.com.au/Quests-Through-Time-Poonam-Nair-ebook/dp/B0BWX7NLGK/ref=sr_1_42?crid=CDA4WR248HNW&keywords=quest+in+time&qid=1680217764&s=digital-text&sprefix=quest+in+time%2Cdigital-text%2C240&sr=1-42" class="btn btn-primary" target="_blank">View / Buy on Amazon</a>
+    </div>
+  </section>
+
+
+<footer>
+  <div class="container">
+    <p>&copy; 2023 Poonam Nair. All rights reserved.</p>
+    <p>
+      <a href="https://www.linkedin.com/in/poonamnair/" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://www.youtube.com/channel/UCDKIg8vC1B31Sji3jE3bXVQ" target="_blank">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+    </p>
+  </div>
+</footer>
+
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script>
+  // Initialize AOS (Animate on Scroll)
+  $(document).ready(function () {
+    AOS.init({
+      once: true
+    });
+  });
+
+  // Smooth scrolling for anchor links
+  $('a[href*="#"]').on('click', function (e) {
+    e.preventDefault();
+    $('html, body').animate(
+      {
+        scrollTop: $($(this).attr('href')).offset().top,
+      },
+      500,
+      'linear'
+    );
+  });
+
+  // Images loading upon scrolling
+  $(window).on('scroll', function () {
+    $('.book-images img').each(function () {
+      if ($(this).offset().top < $(window).scrollTop() + $(window).height()) {
+        $(this).attr('src', $(this).data('src'));
+      }
+    });
+  });
+
+  // Draggable image slider
+  document.querySelectorAll('.image-slider').forEach((slider) => {
+    const handle = slider.querySelector('.handle');
+    const aiGeneratedPhoto = slider.querySelector('.ai-generated-photo');
+    let isMouseDown = false;
+
+    handle.addEventListener('mousedown', () => {
+      isMouseDown = true;
+      slider.classList.add('dragging');
+    });
+
+    document.addEventListener('mouseup', () => {
+      isMouseDown = false;
+      slider.classList.remove('dragging');
+    });
+
+    document.addEventListener('mousemove', (e) => {
+      if (!isMouseDown) return;
+      const sliderRect = slider.getBoundingClientRect();
+      const x = e.pageX - sliderRect.left;
+      const sliderWidth = slider.offsetWidth;
+      const percentage = Math.min(Math.max(x / sliderWidth, 0), 0.99); // Add a boundary to prevent reaching the end of the width
+      handle.style.left = `${percentage * 100}%`;
+      aiGeneratedPhoto.style.width = `${percentage * 100}%`;
+    });
+  });
+
+  // Load GIF previews
+  document.querySelectorAll('.video-preview').forEach((element) => {
+    const gifUrl = element.dataset.gif;
+    element.style.backgroundImage = `url(${gifUrl})`;
+    element.style.backgroundSize = 'cover';
+    element.style.backgroundPosition = 'center';
+  });
+
+  // Replace GIF preview with the YouTube video on hover
+  document.querySelectorAll('.video-preview').forEach((element) => {
+    element.addEventListener('mouseenter', () => {
+      const src = element.dataset.src;
+      const videoContainer = element.parentNode;
+      videoContainer.innerHTML = `<iframe src="${src}?autoplay=0&mute=1" allowfullscreen frameborder="0"></iframe>`;
+      const player = new Plyr(videoContainer.querySelector('iframe'), {
+        youtube: {
+          noCookie: true
+        },
+        controls: ['play-large', 'play', 'progress', 'current-time', 'mute', 'volume', 'captions', 'settings', 'pip', 'airplay', 'fullscreen'],
+        settings: ['captions', 'quality', 'speed'],
+      });
+      // Remove focus outline
+      player.elements.container.querySelector('iframe').addEventListener('focus', () => {
+        player.elements.container.querySelector('iframe').blur();
+      });
+    });
+  });
+</script>
+
+
+</body>
+</html>
