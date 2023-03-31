@@ -67,6 +67,7 @@ header::before {
 nav {
   font-family: 'Space Mono', monospace;
   font-size: 18px;
+     margin-top: -80px;
   color: white;
 }
 
@@ -80,11 +81,38 @@ nav {
   color: white !important;
 }
 
+    
+    .navbar-nav {
+  padding-top: 5px;
+}
+
+.navbar-nav .nav-link {
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #fff;
+}
+    
 nav a {
   color: white !important;
 }
+    
+    .navbar-light .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
 
-
+@media (max-width: 767px) {
+  .navbar-collapse {
+    text-align: left;
+  }
+  
+  .navbar-nav {
+    margin-top: 20px;
+  }
+  
+  .nav-link {
+    color: white;
+  }
+}
 .profile-pic {
   width: 120px;
   height: 120px;
@@ -254,21 +282,21 @@ section {
     <div class="collapse navbar-collapse" id="navbarNav">
       <ul class="navbar-nav ml-auto">
         <li class="nav-item active">
-          <a class="nav-link" href="#videos">Videos</a>
+          <a class="nav-link" href="#videos">AI Media</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#ai-generated-photos">Photos</a>
+          <a class="nav-link" href="#ai-generated-photos">AI Art</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#pdf">Book</a>
+          <a class="nav-link" href="#pdf">AI Novel</a>
         </li>
       </ul>
     </div>
   </nav>
   <div class="container">
     <div class="profile-pic"></div>
-    <h1>Poonam Nair</h1>
-    <h3>AI Artist &amp; Technologist</h3>
+ <h1 style="font-family: 'Verdana', sans-serif; font-size: 4rem; color: #ffffff;">Poonam Nair</h1>
+    <h3 style="font-family: 'Verdana', sans-serif; font-size: 2.5rem; color: #ffffff;">AI Artist &amp; Technologist</h3>
     <p>I'm a full-time AI professional, and I've been lucky enough to spend my career exploring the fascinating world where technology meets AI. This portfolio page is just a showcase of some of the unique and innovative stuff I've been able to create. Hope you enjoy it!</p>
     <a href="mailto:poonamnair@gmail.com" class="btn btn-primary">Let's Connect</a>
   </div>
@@ -278,7 +306,7 @@ section {
 
 <section id="videos">
   <div class="container">
-    <h2 data-aos="fade-up" data-aos-delay="100">AI Generated Videos / Tutorials </h2>
+<h2 data-aos="fade-up" data-aos-delay="100">AI Media</h2>
     <div class="row">
       <div class="col-md-6 col-lg-6">
         <div class="video-container">
@@ -306,17 +334,17 @@ section {
     
 <section id="ai-generated-photos">
   <div class="container">
-    <h2 data-aos="fade-up" data-aos-delay="100">AI-Generated Photos</h2>
+    <h2 data-aos="fade-up" data-aos-delay="100">AI Art</h2>
     <div class="row">
       <div class="col-md-6 col-lg-6">
-        <div class="image-slider" data-aos="zoom-in" data-aos-delay="200" style="background-image: url('https://cdn.midjourney.com/5bebdf4e-295a-4896-b496-1e6746f6577e/grid_0.png');">
-          <div class="ai-generated-photo" style="background-image: url('https://cdn.midjourney.com/d6f1d7a6-e519-42c4-86d6-30505a7a08d0/grid_0.png');"></div>
+        <div class="image-slider" data-aos="zoom-in" data-aos-delay="200" style="background-image: url('https://i.ibb.co/hHV3cQZ/pic2.jpg');">
+          <div class="ai-generated-photo" style="background-image: url('https://i.ibb.co/s21GD9c/mlgamerpmn-cat-lying-on-bed-1990s-polarid-8k-in-disney-pixar-an-3695cc0a-6439-41c2-95e0-c01842447739.png');"></div>
           <div class="handle"></div>
         </div>
       </div>
       <div class="col-md-6 col-lg-6">
-        <div class="image-slider" data-aos="zoom-in" data-aos-delay="300" style="background-image: url('https://cdn.midjourney.com/1264b3c5-e20e-4aac-9d5f-272c22ae82f2/grid_0.png');">
-          <div class="ai-generated-photo" style="background-image: url('https://cdn.midjourney.com/3be400c0-6266-4660-840c-df88fc8e82df/grid_0.png');"></div>
+        <div class="image-slider" data-aos="zoom-in" data-aos-delay="300" style="background-image: url('https://i.ibb.co/nPctJS6/pic1.jpg');">
+          <div class="ai-generated-photo" style="background-image: url('https://i.ibb.co/MP3xBW9/mlgamerpmn-pretty-woman-smiling-in-disney-pixar-style-effect-an-fe99a0f6-48e3-4360-a08b-4ec9bca8cc29.jpg');"></div>
           <div class="handle"></div>
         </div>
       </div>
@@ -330,7 +358,7 @@ section {
   <section id="pdf">
     <div class="container">
  <h2 data-aos="fade-up" data-aos-delay="100">Quests Through Time</h2>
-    <p data-aos="fade-up" data-aos-delay="200">An AI generated childrens book.</p>
+    <p data-aos="fade-up" data-aos-delay="200">A children's picture book created by artificial intelligence.</p>
       <div class="row book-images">
         <div class="col-md-4">
           <img src="https://i.ibb.co/jT3NQzN/5.png" alt="Book image 1">
@@ -456,3 +484,4 @@ section {
 
 </body>
 </html>
+
